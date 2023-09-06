@@ -8,13 +8,15 @@
         box-sizing: border-box;
         
       }
-      .conteiner h1{
+      /* body{
+        background-color: aquamarine;
+        color: black; */
+      
+      .container h1{
         color: blue;
         text-shadow:rgb(17, 17, 17) 10px 5px;
         text-transform: capitalize;
         font-size: 45px;
-   
-  
   }
       h1{
         text-align: center;
@@ -24,28 +26,21 @@
 color: red; 
     }
 
-.conteiner{
+.container{
     width: 100%;
     height: 100vh;
-background-image: url(./Photos/IMG_1049.jpg);
+background-image: url(/Photos/IMG_7490.JPG);
 background-position: center;
 background-size: cover;
+text-align: left;
+/* background-repeat: no-repeat; */
 /* position: relative; */
-}
-.conteiner{
-    padding: 10px 10%;
-}
-.conteiner ul{
-    font-size: 25px;
-    color: black;
-    text-shadow: white 4px 2px;
-}
-.header li{
-    text-align: center;
 
 }
-p{
-    font-size: 18px;
+.header-text{
+    text-align: center;
+
+
 }
 nav{
     display: flex;
@@ -53,16 +48,42 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.container{
+    padding: 10px 10%;
+}
+.container ul{
+    font-size: 25px;
+    color: black;
+    text-shadow: white 4px 2px;
+}
+.container li{
+    text-align: center;
+
+}
+p{
+    font-size: 18px;
+}
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    /* //-------------------------------------------------------------------------------// */
 }
 .about{
     width: 100%;
     padding: 100px 0px;
     background-color: lightblue;
 }
+    .about1{
+        width: 100%;
+        padding: 100px 0px;
+        background-color: beige;
+    }
+    .about1 img{
+        height: auto;
+        width: 450px;
+    }
+
 .about img{
     height: auto;
     width: 450px;
