@@ -1,98 +1,156 @@
-
-    *{
-        margin: 0;
-        padding: 0;
-        background-attachment: fixed;
-        /* background-color: antiquewhite; */
-        /* margin: auto; */
-        box-sizing: border-box;
-        
-      }
-      /* body{
-        background-color: aquamarine;
-        color: black; */
-      
-      .container h1{
-        color: blue;
-        text-shadow:rgb(17, 17, 17) 10px 5px;
-        text-transform: capitalize;
-        font-size: 45px;
-  }
-      h1{
-        text-align: center;
-
-      }
-      h2{
-color: red; 
-    }
-
-.container{
-    width: 100%;
-    height: 100vh;
-background-image: url(/Photos/IMG_7490.JPG);
-background-position: center;
-background-size: cover;
-text-align: left;
-/* background-repeat: no-repeat; */
-/* position: relative; */
+* {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    /* background-color: antiquewhite; */
+    /* margin: auto; */
+    box-sizing: border-box;
 
 }
-.header-text{
+
+.container ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: lightpink;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+li {
+    display: inline;
+    float: right;
+}
+
+li a {
+    font-size: 25px;
+    display: block;
+    /* padding: 8px; */
+    color: antiquewhite;
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 1px 0px;
+    text-decoration: none;
+}
+
+ul {
+    /* background-color: whitesmoke; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* border: 1px solid #e7e7e7; */
+  /* background-color: #f3f3f3; */
+}
+
+.container ul li:hover::after {
+    width: 100%;
+}
+
+.container h1 {
+    color: pink;
+    text-shadow:rgb(17, 17, 17) 2px 2px;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+h1 {
     text-align: center;
 
-
 }
-nav{
+
+h2 {
+    color: red;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Photos/IMG_7490.JPG);
+    background-position: center;
+    background-size: cover;
+    /* text-align: left; */
+
+    /* background-repeat: no-repeat; */
+    /* position: relative; */
+}
+
+.header-text {
+    text-align: center;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.container{
-    padding: 10px 10%;
-}
-.container ul{
-    font-size: 25px;
-    color: black;
-    text-shadow: white 4px 2px;
-}
-.container li{
-    text-align: center;
 
 }
-p{
+/* nav h1{
+    background-color: beige;
+} */
+
+.container {
+    padding: 8px 1.5%;
+    /* position: fixed; */
+
+}
+
+.container ul {
+    font-size: 25px;
+
+    /* text-shadow: white 4px 2px; */
+}
+
+p {
     font-size: 18px;
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-    /* //-------------------------------------------------------------------------------// */
+
+nav ul li {
+    margin: 35px 25px;
 }
-.about{
+
+/* //-------------------------------About Me------------------------------------------------// */
+
+.headerabout {
+    background-color: lightblue;
+}
+
+.about {
     width: 100%;
     padding: 100px 0px;
     background-color: lightblue;
 }
-    .about1{
-        width: 100%;
-        padding: 100px 0px;
-        background-color: beige;
-    }
-    .about1 img{
-        height: auto;
-        width: 450px;
-    }
 
-.about img{
+.about1 {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: beige;
+}
+
+.about1 img {
     height: auto;
     width: 450px;
+    border-radius: 10%;
+}
+
+.about img {
+    height: auto;
+    width: 450px;
+    border-radius: 22%;
 
 }
-.about-text{
+
+.about-text {
     width: 550px;
 }
-.main{
+
+.main {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -100,21 +158,25 @@ nav ul li{
     align-items: center;
     justify-content: space-around;
 }
-.about-text h2{
+
+.about-text h2 {
     color: black;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: center;
 }
-.about-text h5{
+
+.about-text h5 {
     color: blueviolet;
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 25px;
     text-transform: capitalize;
+    text-align: center;
 }
-.about-text p{
+
+.about-text p {
     color: brown;
     letter-spacing: 1px;
     line-height: 28px;
@@ -122,3 +184,26 @@ nav ul li{
     margin-bottom: 45px;
 }
 
+.links {
+    padding: 10px 10%;
+}
+
+.links ul {
+    font-size: 25px;
+    color: black;
+    /* text-shadow: white 4px 2px; */
+}
+
+.links li {
+    text-align: center;
+}
+
+/* -------------------contact me--------------------------- */
+
+.headercontact {
+    background-color: beige;
+}
+/* --------------------------------q&a------------------------------------------- */
+.headerqa{
+    background-color: antiquewhite;
+}
