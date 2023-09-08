@@ -8,6 +8,36 @@
 
 }
 
+.hero-btn {
+    /* display: inline-block; */
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(8, 8, 8);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: pink;
+    position: usticky;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+
+.cv {
+    text-align: center;
+    padding-top: 650px;
+    padding-left: 1075px;
+    font-size: 50px;
+}
+
+.hero-btn:hover {
+    border: 5px solid silver;
+    background: antiquewhite;
+    transition: 1s;
+}
+
 .container ul li::after {
     content: "";
     width: 0%;
@@ -24,9 +54,10 @@ li {
 }
 
 li a {
+    /* position: fixed; */
     font-size: 25px;
     display: block;
-    /* padding: 8px; */
+    padding: 8px;
     color: antiquewhite;
     display: block;
     color: #666;
@@ -35,25 +66,13 @@ li a {
     text-decoration: none;
 }
 
- .profile-links ul{
-    /* background-color: whitesmoke; */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
-}
-
 .container ul li:hover::after {
     width: 100%;
 }
 
 .container h1 {
     color: pink;
-    text-shadow:rgb(17, 17, 17) 2px 2px;
+    text-shadow: rgb(17, 17, 17) 2px 2px;
     text-transform: capitalize;
     font-size: 45px;
 }
@@ -67,7 +86,11 @@ h2 {
     color: red;
 }
 
-.header {
+.header-profile {
+    background-color: antiquewhite;
+}
+
+.header-profile {
     width: 100%;
     height: 100vh;
     background-image: url(/Photos/IMG_7490.JPG);
@@ -77,6 +100,22 @@ h2 {
 
     /* background-repeat: no-repeat; */
     /* position: relative; */
+}
+
+.nav-links {
+    height: 100px;
+    width: 100%;
+    /* padding: 0; */
+    position: fixed;
+    /* margin: -10;
+    margin-left: -30px;
+    margin-right: 200;
+    margin-bottom: 35px; */
+    /* background-color: antiquewhite; */
+}
+
+.header-profile h1 {
+    text-align: left;
 }
 
 .header-text {
@@ -90,20 +129,14 @@ nav {
     flex-wrap: wrap;
 
 }
-/* nav h1{
-    background-color: beige;
-} */
 
 .container {
     padding: 8px 1.5%;
-    /* position: fixed; */
 
 }
 
 .container ul {
     font-size: 25px;
-
-    /* text-shadow: white 4px 2px; */
 }
 
 p {
@@ -114,18 +147,7 @@ nav ul li {
     margin: 35px 25px;
 }
 
-/* //-------------------------------About Me------------------------------------------------// */
-
-.headerabout {
-    background-color: beige;
-}
-
-.about {
-    width: 100%;
-    padding: 100px 0px;
-    background-color: lightblue;
-}
-
+/* ---------------------second page on my profile page------------------------------- */
 .about1 {
     width: 100%;
     padding: 100px 0px;
@@ -138,15 +160,50 @@ nav ul li {
     border-radius: 10%;
 }
 
-.about img {
-    height: auto;
-    width: 450px;
-    border-radius: 22%;
+.about-text {
+    width: 550px;
+}
+
+/* //-------------------------------About Me------------------------------------------------// */
+
+.container-about {
+    padding: 0;
 
 }
 
-.about-text {
-    width: 550px;
+.container-about ul {
+    font-size: 25px;
+}
+
+.container-about ul li:hover::after {
+    width: 100%;
+}
+
+.container-about ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.container-about ul {
+    font-size: 25px;
+}
+
+.container-about h1 {
+    color: pink;
+    text-shadow: rgb(17, 17, 17) 2px 2px;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: lightcyan;
 }
 
 .main {
@@ -183,22 +240,55 @@ nav ul li {
     margin-bottom: 45px;
 }
 
-.links {
+/* .links {
     padding: 10px 10%;
 }
 
 .links ul {
     font-size: 25px;
     color: black;
-    /* text-shadow: white 4px 2px; */
 }
 
 .links li {
     text-align: center;
+
+} */
+
+.about-text .read-btn {
+    text-align: center;
 }
+
+.read-btn {
+    /* text-decoration: wavy; */
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.read-btn :hover{
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+}
+.text-after{
+    visibility: hidden;
+}
+.about img {
+    height: auto;
+    width: 450px;
+    border-radius: 22%;
+    margin-top: -550;
+
+}
+
 /* ------------------footer------------------------------ */
 
-footer{
+footer {
     text-align: center;
     padding: 5px;
     background-color: antiquewhite;
@@ -211,22 +301,36 @@ footer{
 }
 
 /* --------------BLOG-------------------- */
-.logohz img{
+/* .logohz img {
     height: auto;
     width: 450px;
-}
-.bar-logo{
+} */
+
+.bar-logo {
     display: grid;
     grid-template-columns: auto auto;
     list-style-type: none;
     margin: 0;
-    padding: 25px;
+    padding: 15px;
     width: 100%;
-    height: 180px;
-    background-color: white;
+    height: 100px;
+    background-color: lightgrey;
     text-align: center;
+    
 }
-.about-blog h5{
+.bar-logo img{
+    margin: -100;
+    padding-top: 25px;
+    padding-left: 100px;
+    width: 25%;
+    height: 100px;
+    /* border-radius: 40%; */
+}
+.bar-logo li a{
+    font-size: 15px;
+}
+
+.about-blog h5 {
     color: blue;
     letter-spacing: 2px;
     font-size: 20px;
@@ -234,32 +338,39 @@ footer{
     text-transform: capitalize;
     text-align: center;
 }
-.about-blog{
+
+.about-blog {
     width: 550px;
 }
-    /* ------------------------QA------------------------------------------------- */
 
-.headerqa{
+/* ------------------------QA------------------------------------------------- */
+
+.headerqa {
     background-color: beige;
 }
-.qa h3{
+
+.qa h3 {
     text-align: center;
 }
-.qa h2{
+
+.qa h2 {
     text-align: center;
 }
-.qa p{
+
+.qa p {
     font-size: 25px;
 }
-.qa hr{
+
+.qa hr {
     width: 560px;
     text-align: left;
     margin: 0 auto;
     display: inline-block;
-    
+
 }
-.qa{
+
+.qa {
     background-color: antiquewhite;
 }
 
-
+/* ----------------------------------------------------------- */
