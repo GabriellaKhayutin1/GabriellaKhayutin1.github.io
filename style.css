@@ -1,3 +1,4 @@
+@import url(colors.css);
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,8 @@
     /* background-color: antiquewhite; */
     /* margin: auto; */
     box-sizing: border-box;
+    left: 0;
+    top: 0;
 
 }
 
@@ -15,7 +18,7 @@
     border: 2px solid rgb(8, 8, 8);
     padding: 12px 34px;
     font-size: 13px;
-    background: pink;
+    background: rgb(103, 105, 200);
     position: usticky;
     cursor: pointer;
     border-radius: 15px;
@@ -41,8 +44,8 @@
 .container ul li::after {
     content: "";
     width: 0%;
-    height: 2px;
-    background: lightpink;
+    height: 3px;
+    background: darkgray;
     display: block;
     margin: auto;
     transition: 0.7s;
@@ -67,14 +70,14 @@ li a {
 }
 
 .container ul li:hover::after {
-    width: 100%;
+    width: 64%;
 }
 
 .container h1 {
-    color: pink;
-    text-shadow: rgb(17, 17, 17) 2px 2px;
+    color: var(--titleText);
+    text-shadow: rgb(103, 105, 200) 3px 2px;
     text-transform: capitalize;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 h1 {
@@ -89,17 +92,74 @@ h2 {
 .header-profile {
     background-color: antiquewhite;
 }
-
 .header-profile {
     width: 100%;
     height: 100vh;
+    /* margin-top: 50px; */
+    /* margin-bottom:500 ; */
     background-image: url(/Photos/IMG_7490.JPG);
     background-position: center;
+    background-position-y: 5px;
     background-size: cover;
     /* text-align: left; */
 
     /* background-repeat: no-repeat; */
     /* position: relative; */
+}
+
+nav {
+    /* width: 50%; */
+    /* height: 10px; */
+    /* line-height: 75px; */
+    /* padding: 0px 0px; */
+    position: fixed;
+    /* padd */
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-top: -5px; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+nav ul {
+    float: right;
+    position: fixed;
+    top: 10px;
+    /* top: 10;             made my text at the center of the header */
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 25px;
+    padding: 0px 30px;
+    text-decoration: none;
+}
+
+li {
+    display: block;
+    float: right;
+}
+
+/* li a{ does a problem to my HZ img
+    display: block;
+    padding: 8px;
+} */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .nav-links {
@@ -176,14 +236,14 @@ nav ul li {
 }
 
 .container-about ul li:hover::after {
-    width: 100%;
+    width: 64%;
 }
 
 .container-about ul li::after {
     content: "";
     width: 0%;
     height: 2px;
-    background: black;
+    background: silver;
     display: block;
     margin: auto;
     transition: 0.7s;
@@ -194,16 +254,18 @@ nav ul li {
 }
 
 .container-about h1 {
-    color: pink;
-    text-shadow: rgb(17, 17, 17) 2px 2px;
-    text-transform: capitalize;
-    font-size: 45px;
+        color: var(--titleText);
+        text-shadow: rgb(103, 105, 200) 3px 2px;
+        text-transform: capitalize;
+        font-size: 35px;
+    
 }
+/* ----it was about header-- */
 
 .about {
     width: 100%;
     padding: 100px 0px;
-    background-color: lightcyan;
+    background-color: rgb(227, 235, 242);
 }
 
 .main {
@@ -224,7 +286,8 @@ nav ul li {
 }
 
 .about-text h5 {
-    color: blueviolet;
+    color: black;
+    text-shadow: white 2px 1px;
     letter-spacing: 2px;
     font-size: 20px;
     margin-bottom: 25px;
@@ -233,56 +296,36 @@ nav ul li {
 }
 
 .about-text p {
-    color: brown;
+    color: black;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
-
-/* .links {
-    padding: 10px 10%;
-}
-
-.links ul {
-    font-size: 25px;
-    color: black;
-}
-
-.links li {
-    text-align: center;
-
-} */
-
 .about-text .read-btn {
     text-align: center;
 }
 
-.read-btn {
-    /* text-decoration: wavy; */
-    text-align: center;
-    background-color: antiquewhite;
-    color: black;
-    font-weight: bold;
+.hidden-text{
+    display: none;
+}
+.read-more{
+    background-color: white;
+    border-color: black 5px 5px;
+    padding: 5px 10px;
+    cursor: pointer;
     font-size: 15px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    
 }
-.read-btn :hover{
- box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+.read-more:focus +.hidden-text{
+    display: block;
 }
-.text-after{
-    visibility: hidden;
-}
+
 .about img {
     height: auto;
     width: 450px;
     border-radius: 22%;
-    margin-top: -550;
+    margin-top: 50px;
 
 }
 
@@ -301,6 +344,40 @@ footer {
 }
 
 /* --------------BLOG-------------------- */
+.container-blog {
+    padding: 0;
+
+}
+
+.container-blog ul {
+    font-size: 25px;
+}
+
+.container-blog ul li:hover::after {
+    width: 64%;
+}
+
+.container-blog ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: silver;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.container-blog ul {
+    font-size: 25px;
+}
+
+.container-blog h1 {
+        color: var(--titleText);
+        text-shadow: rgb(103, 105, 200) 3px 2px;
+        text-transform: capitalize;
+        font-size: 35px;
+    
+}
 /* .logohz img {
     height: auto;
     width: 450px;
@@ -316,19 +393,21 @@ footer {
     height: 100px;
     background-color: lightgrey;
     text-align: center;
-    
+
 }
-.bar-logo img{
+
+.bar-logo img {
     margin: -50;
-    margin-right: -700px;
-    margin-top:-100;
+    margin-right: -835px;
+    margin-top: -100;
     padding-top: 25px;
     /* padding-left: 40px; */
     width: 12%;
     height: 100px;
     /* border-radius: 40%; */
 }
-.bar-logo li a{
+
+.bar-logo li a {
     font-size: 15px;
 }
 
@@ -340,16 +419,29 @@ footer {
     text-transform: capitalize;
     text-align: center;
 }
-
-.about-blog {
-    width: 550px;
+.blog-img{
+    text-align: center;
+    margin-top: 10px;
 }
+.blog h1{
+    font-size: 25px;
+    margin-top: 110px;
+}
+.blog-footer{
+    margin-top: 25%;
+}
+
+/* .about-blog {
+    width: 550px;
+} */
+
+
 
 /* ------------------------QA------------------------------------------------- */
 
-.headerqa {
+/* .headerqa {
     background-color: beige;
-}
+} */
 
 .qa h3 {
     text-align: center;
@@ -371,8 +463,8 @@ footer {
 
 }
 
-.qa {
+/* .qa {
     background-color: antiquewhite;
-}
+} */
 
 /* ----------------------------------------------------------- */
