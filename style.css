@@ -16,14 +16,13 @@
     /* display: inline-block; */
     text-decoration: none;
     color: black;
-    border: 1px solid rgb(8, 8, 8);
+    /* border: 1px solid rgb(8, 8, 8); */
     padding: 12px 34px;
-    font-size: 13px;
-    background: #94cada;
+    font-size: 18px;
+    background: #dae1e3;
     position: usticky;
     cursor: pointer;
     border-radius: 15px;
-    font-size: 25px;
     font-weight: bold;
 
 
@@ -37,7 +36,7 @@
 }
 
 .hero-btn:hover {
-    border: 5px solid silver;
+    border: 2px solid silver;
     background: antiquewhite;
     transition: 1s;
 }
@@ -76,7 +75,7 @@ li a {
 
 .container h1 {
     color: var(--titleText);
-    text-shadow: rgb(103, 105, 200) 3px 2px;
+    text-shadow: rgb(248, 248, 255) 4px 2px;
     text-transform: capitalize;
     font-size: 35px;
 }
@@ -110,15 +109,11 @@ h2 {
 }
 
 nav {
-    /* width: 50%; */
-    /* height: 10px; */
-    /* line-height: 75px; */
-    /* padding: 0px 0px; */
+    
     position: fixed;
     /* padd */
     background-image: linear-gradient(var(--primary), var(--secondary));
-    /* margin-top: -5px; */
-    /* display: flex; */
+    /* background-color: gainsboro; */
     align-items: center;
     justify-content: space-between;
     /* flex-wrap: wrap; */
@@ -257,7 +252,7 @@ nav ul li {
 
 .container-about h1 {
     color: var(--titleText);
-    text-shadow: rgb(103, 105, 200) 3px 2px;
+    text-shadow: rgb(248, 248, 255) 4px 2px;
     text-transform: capitalize;
     font-size: 35px;
 
@@ -286,6 +281,7 @@ nav ul li {
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: center;
+    /* font-family: fantasy; */
 }
 
 .about-text h5 {
@@ -296,6 +292,7 @@ nav ul li {
     margin-bottom: 25px;
     text-transform: capitalize;
     text-align: center;
+
 }
 
 .about-text p {
@@ -304,6 +301,8 @@ nav ul li {
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
+    /* font-family; */
+
 }
 
 .about-text .read-btn {
@@ -315,13 +314,33 @@ nav ul li {
 }
 
 .read-more {
-    background-color: white;
-    border-color: black 5px 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 15px;
+      /* display: inline-block; */
+      text-decoration: none;
+      color: black;
+      /* border: 1px solid rgb(8, 8, 8); */
+      padding: 12px 34px;
+      font-size: 12px;
+      background: #bcc7c9;
+      position: usticky;
+      cursor: pointer;
+      border-radius: 15px;
+      font-weight: bold;
+  
+  }
+  .read-more:hover{
+    border: 2px solid rgb(2, 36, 41);
+    background: #cedee2;
+    transition: 1s;
+  }
 
-}
+
+/* .read-more :hover{
+
+    border: 2px solid silver;
+    background: antiquewhite;
+    transition: 1s;
+
+} */
 
 .read-more:focus+.hidden-text {
     display: block;
@@ -344,7 +363,7 @@ footer {
 }
 
 .footer-dash {
-    margin-top: 35%;
+    margin-top: 3%;
 }
 
 /* -------------------contact me--------------------------- */
@@ -383,7 +402,7 @@ footer {
 
 .container-blog h1 {
     color: var(--titleText);
-    text-shadow: rgb(103, 105, 200) 3px 2px;
+    text-shadow: rgb(248, 248, 255) 4px 2px;
     text-transform: capitalize;
     font-size: 35px;
 
@@ -482,18 +501,85 @@ footer {
 } */
 
 /* -------------------dashboard---------------------------------------- */
-
+.filter{
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+   
+    /* background-color: lightblue; */
+}
 table{
-    margin-top: 250px;
-    /* padding-right: 150px;
-    align-items: center; */
-    margin-left: 175px;
-    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    /* height: 450px; */
+    background: white;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 12px 5px silver ; 
+}
+/* --------------------- */
+
+
+.progress-bar {
+    width: 0;
+    height: 2%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+    margin-top: 45%;
+}
+/* ------------------------- */
+    /* .progress-container {
+        width: 100%;
+        background-color: #f0f0f0; /* Background color for the container */
+        /* height: 20px; /* Height of the progress container */
+        /* position: relative */ */
+    */
+
+    
+    .progress-bar {
+        width: 0; /* Initial width is 0% */
+        height: 100%; /* Height of the progress bar */
+        background-color: #bae8e8; /* Color of the progress bar */
+        transition: width 0.3s ease-in-out; /* Smooth transition animation */
+        cursor: pointer;
+    }
+    .percentage-label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000;
+    }
+      .percentage-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+        }
+
+th{
+    /* background: lightpink; */
+    color: black;
+    text-transform: uppercase;
+}
+th,td{
+    padding:12px 15px ;
+    /* border-bottom:1px solid #060606; */
+}
+tr:nth-child(odd){
+    background-color: rgb(225, 231, 236);
 }
 
-table,
-th,
-td {
-    border: 1px solid black;
 
-}
