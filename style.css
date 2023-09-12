@@ -102,21 +102,20 @@ h2 {
     background-position: center;
     background-position-y: 5px;
     background-size: cover;
-    /* text-align: left; */
 
-    /* background-repeat: no-repeat; */
-    /* position: relative; */
 }
 
+/*------------------------------- for the header of all pages ---------------------------------------------------*/
 nav {
-    
     position: fixed;
-    /* padd */
     background-image: linear-gradient(var(--primary), var(--secondary));
-    /* background-color: gainsboro; */
     align-items: center;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 nav ul {
@@ -143,10 +142,6 @@ li {
     float: right;
 }
 
-/* li a{ does a problem to my HZ img
-    display: block;
-    padding: 8px;
-} */
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -162,14 +157,11 @@ nav ul li a {
 .nav-links {
     height: 100px;
     width: 100%;
-    /* padding: 0; */
     position: fixed;
-    /* margin: -10;
-    margin-left: -30px;
-    margin-right: 200;
-    margin-bottom: 35px; */
-    /* background-color: antiquewhite; */
+
 }
+
+/* --------------------------for the header of all pages-till here -------------------------------------*/
 
 .header-profile h1 {
     text-align: left;
@@ -177,14 +169,6 @@ nav ul li a {
 
 .header-text {
     text-align: center;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
 }
 
 .container {
@@ -220,6 +204,16 @@ nav ul li {
 .about-text {
     width: 550px;
 }
+
+/* .profile-text h2{
+    font-size: 10;
+    color: black;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+        width: 550px;
+} */
 
 /* //-------------------------------About Me------------------------------------------------// */
 
@@ -258,7 +252,7 @@ nav ul li {
 
 }
 
-/* ----it was about header-- */
+/* -----------------------------it was about header------------------------------------------------------ */
 
 .about {
     width: 100%;
@@ -281,7 +275,7 @@ nav ul li {
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: center;
-    /* font-family: fantasy; */
+    /* font-family: open; */
 }
 
 .about-text h5 {
@@ -314,33 +308,23 @@ nav ul li {
 }
 
 .read-more {
-      /* display: inline-block; */
-      text-decoration: none;
-      color: black;
-      /* border: 1px solid rgb(8, 8, 8); */
-      padding: 12px 34px;
-      font-size: 12px;
-      background: #bcc7c9;
-      position: usticky;
-      cursor: pointer;
-      border-radius: 15px;
-      font-weight: bold;
-  
-  }
-  .read-more:hover{
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px;
+    font-size: 12px;
+    background: #bcc7c9;
+    position: usticky;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+
+.read-more:hover {
     border: 2px solid rgb(2, 36, 41);
     background: #cedee2;
     transition: 1s;
-  }
-
-
-/* .read-more :hover{
-
-    border: 2px solid silver;
-    background: antiquewhite;
-    transition: 1s;
-
-} */
+}
 
 .read-more:focus+.hidden-text {
     display: block;
@@ -365,6 +349,10 @@ footer {
 .footer-dash {
     margin-top: 3%;
 }
+.blog-footer {
+    margin-bottom: 100%;
+}
+
 
 /* -------------------contact me--------------------------- */
 
@@ -408,11 +396,6 @@ footer {
 
 }
 
-/* .logohz img {
-    height: auto;
-    width: 450px;
-} */
-
 .bar-logo {
     display: grid;
     grid-template-columns: auto auto;
@@ -431,10 +414,9 @@ footer {
     margin-right: -835px;
     margin-top: -100;
     padding-top: 25px;
-    /* padding-left: 40px; */
     width: 12%;
     height: 100px;
-    /* border-radius: 40%; */
+
 }
 
 .bar-logo li a {
@@ -464,17 +446,38 @@ footer {
     margin-top: 25%;
 }
 
-/* .about-blog {
-    width: 550px;
+/* .blog {
+    width: 85%;
+    margin: 75px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+
+}
+.card{
+    background-color: #4CAF50;
+    box-shadow: 0px 4px 8px 0px rgba(red, green, blue, alpha) ;
 } */
+.container-blog{
+    background: linear-gradient(45deg, blue, silver);
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container .heading-blog{
+    text-align: center;
+    padding-bottom: 15px;
+    color: pink;
+    text-shadow: 0 5px 10px black;
+    font-size: 50px;
 
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(270px, 1fr));
+    gap: 15px;
+}
 
-
-/* ------------------------QA------------------------------------------------- */
-
-/* .headerqa {
-    background-color: beige;
-} */
+/* ----------------------------------------QA------------------------------------------------- */
 
 .qa h3 {
     text-align: center;
@@ -496,23 +499,20 @@ footer {
 
 }
 
-/* .qa {
-    background-color: antiquewhite;
-} */
 
-/* -------------------dashboard---------------------------------------- */
-.filter{
-  
+/* ------------------------------------------------dashboard---------------------------------------- */
+.filter {
+
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
     opacity: .7;
-   
-    /* background-color: lightblue; */
+
 }
-table{
+
+table {
     position: absolute;
     z-index: 2;
     left: 50%;
@@ -526,8 +526,9 @@ table{
     border-spacing: 0;
     border-radius: 5px 12px 0 0;
     overflow: hidden;
-    box-shadow: 0 12px 5px silver ; 
+    box-shadow: 0 12px 5px silver;
 }
+
 /* --------------------- */
 
 
@@ -538,48 +539,48 @@ table{
     transition: width 0.3s ease-in-out;
     margin-top: 45%;
 }
+
 /* ------------------------- */
-    /* .progress-container {
-        width: 100%;
-        background-color: #f0f0f0; /* Background color for the container */
-        /* height: 20px; /* Height of the progress container */
-        /* position: relative */ */
-    */
+*/ .progress-bar {
+    width: 0;
+    /* Initial width is 0% */
+    height: 100%;
+    /* Height of the progress bar */
+    background-color: #bae8e8;
+    /* Color of the progress bar */
+    transition: width 0.3s ease-in-out;
+    /* Smooth transition animation */
+    cursor: pointer;
+}
 
-    
-    .progress-bar {
-        width: 0; /* Initial width is 0% */
-        height: 100%; /* Height of the progress bar */
-        background-color: #bae8e8; /* Color of the progress bar */
-        transition: width 0.3s ease-in-out; /* Smooth transition animation */
-        cursor: pointer;
-    }
-    .percentage-label {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #000;
-    }
-      .percentage-label {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #000;
-        }
+.percentage-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
 
-th{
+.percentage-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+
+th {
     /* background: lightpink; */
     color: black;
     text-transform: uppercase;
 }
-th,td{
-    padding:12px 15px ;
+
+th,
+td {
+    padding: 12px 15px;
     /* border-bottom:1px solid #060606; */
 }
-tr:nth-child(odd){
+
+tr:nth-child(odd) {
     background-color: rgb(225, 231, 236);
 }
-
-
