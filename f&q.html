@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F&Q</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="Icon" href="./Photos/photo.jpg">
 </head>
 
@@ -14,7 +15,6 @@
             <h1>Gabriella Khayutin</h1>
 
             <ul>
-               
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="./f&q.html">F&Q</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </div>
-    </section>
+    <!-- </section>
     <section class="qa">
         <div id="questions">
             <h1>Are you a new student at HZ?</h1>
@@ -41,11 +41,86 @@
         </p>
 
 
-    </section>
+    </section> -->
+    <div class="wrapper">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <button class="accordion">
+                How can you print a document from your laptop at HZ?
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="pannel">
+                <p>bjidwbfhivfcbdshvfbwhbgtfw</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How can you scan a document and send it to your laptop at HZ?
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="pannel">
+                <p>bjidwbfhivfcbdshvfbwhbgtfw</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="pannel">
+                <p>bjidwbfhivfcbdshvfbwhbgtfw</p>
+            </div>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="pannel">
+                <p>bjidwbfhivfcbdshvfbwhbgtfw</p>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    How can you book a project space in one of the wings?
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="pannel">
+                    <p>bjidwbfhivfcbdshvfbwhbgtfw</p>
+                </div>
+            </div>
+            <div class="faq">
+                <button class="accordion">
+                    What are the instructions if you want to park your car at the HZ parking lot?
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="pannel">
+                    <p>bjidwbfhivfcbdshvfbwhbgtfw</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript for the accordion functionality -->
+        <script>
+            var acc = document.querySelectorAll(".accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block" || panel.style.display === "") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </div>
 
     <!-- -------------------------- -->
 </body>
-<footer>
+<footer class="faq-footer">
     <p>&copy&nbsp; GabriellaKhayutin@gmail.com</p>
 </footer>
 
