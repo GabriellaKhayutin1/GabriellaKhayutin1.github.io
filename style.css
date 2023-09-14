@@ -701,14 +701,15 @@ th {
     /* background: lightpink; */
     color: black;
     text-transform: uppercase;
+    background-color: rgb(230, 239, 203);
 }
 
 th,
 td {
     padding: 12px 15px;
-    /* border-bottom:1px solid #060606; */
+    border-bottom:1px solid #060606;
 }
 
 tr:nth-child(odd) {
-    background-color: rgb(225, 231, 236);
+    /* background-color: rgb(225, 231, 236); */
 }
