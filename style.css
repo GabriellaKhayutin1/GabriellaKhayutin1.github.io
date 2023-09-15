@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
     /* CSS rules for screens up to 768px wide */
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     /* CSS rules for screens between 769px and 1024px wide */
 }
@@ -9,9 +10,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* background-attachment: fixed; */
-    /* background-color: antiquewhite; */
-    /* margin: auto; */
     box-sizing: border-box;
     left: 0;
     top: 0;
@@ -19,7 +17,6 @@
 }
 
 .hero-btn {
-    /* display: inline-block; */
     text-decoration: none;
     color: black;
     /* border: 1px solid rgb(8, 8, 8); */
@@ -63,7 +60,6 @@ li {
 }
 
 li a {
-    /* position: fixed; */
     font-size: 25px;
     display: block;
     padding: 8px;
@@ -102,8 +98,6 @@ h2 {
 .header-profile {
     width: 100%;
     height: 100vh;
-    /* margin-top: 50px; */
-    /* margin-bottom:500 ; */
     background-image: url(/Photos/IMG_7490.JPG);
     background-position: center;
     background-position-y: 5px;
@@ -295,7 +289,8 @@ nav ul li {
 .blog-footer {
     margin-top: 25%;
 }
-.faq-footer{
+
+.faq-footer {
     margin-top: 10%;
 }
 
@@ -433,20 +428,21 @@ footer {
 .footer-dash {
     margin-top: 3%;
 }
+
 .blog-footer {
     margin-bottom: 0px;
 }
 
 
-/* -------------------contact me--------------------------- */
+/* -------------------contact me-gonna do this later--------------------------- */
 
-.headercontact {
+/* .headercontact {
     background-color: beige;
-}
+} */
 
 /* --------------BLOG-------------------- */
 
-.container1-blog{
+.container1-blog {
     width: 85%;
     margin: 50px auto;
     display: grid;
@@ -454,7 +450,8 @@ footer {
     grid-gap: 30px;
     margin-top: 150px;
 }
-.container2-blog{
+
+.container2-blog {
     width: 85%;
     margin: 50px auto;
     display: grid;
@@ -462,74 +459,87 @@ footer {
     grid-gap: 30px;
     margin-top: 150px;
 }
-.cards{
+
+.cards {
     background-color: white;
-    box-shadow:0px 4px 8px 0px #666;
+    box-shadow: 0px 4px 8px 0px #666;
 }
-.image-section{
+
+.image-section {
     height: 225px;
     background-color: pink;
 }
-.cards .img-one{
+
+.cards .img-one {
     background-image: url(Photos/blog1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
 }
-.cards .img-two{
+
+.cards .img-two {
     background-image: url(Photos/blog3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
 }
-.cards .img-three{
+
+.cards .img-three {
     background-image: url(Photos/blog2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
 }
-.cards .img-four{
+
+.cards .img-four {
     background-image: url(Photos/blog4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
 
 }
-.cards .img-five{
+
+.cards .img-five {
     background-image: url(Photos/blog5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
 
 }
-.cards .img-six{
+
+.cards .img-six {
     background-image: url(Photos/blog6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position: center;
 
 }
 
-.content{
+.content {
     padding: 15px 10px;
     text-align: center;
 
 }
-.content h2{
+
+.content h2 {
     letter-spacing: 1.5px;
 }
-.content h2{
+
+.content h2 {
     letter-spacing: 1.5px;
 }
-.content h3{
+
+.content h3 {
     margin-top: 5px;
     /* font-family: ; */
 }
-.content p{
+
+.content p {
     margin: 15px 0px;
     font-size: 15px;
 }
-.content a{
+
+.content a {
     text-decoration: none;
     font-size: 18px;
     color: #000;
@@ -540,7 +550,8 @@ footer {
     border-radius: 30px;
 
 }
-.content a:hover{
+
+.content a:hover {
     background-color: rgb(183, 233, 233);
     color: #666;
     transition: 1s ease;
@@ -552,14 +563,14 @@ footer {
     margin: auto;
 }
 
-.wrapper > p,
-.wrapper > h1 {
+.wrapper>p,
+.wrapper>h1 {
     margin: 1.5rem 0;
     text-align: center;
     margin-top: 150px;
 }
 
-.wrapper > h1 {
+.wrapper>h1 {
     letter-spacing: 3px;
 }
 
@@ -604,35 +615,13 @@ footer {
 }
 
 .faq {
-    /* border: 1px solid black; */
     margin: 10px 0;
 }
 
 .faq.active {
-    border: 1px solid black; /* Include border for active state */
+    border: 1px solid black;
+    /* Include border for active state */
 }
-
-
-/* .qa h3 {
-    text-align: center;
-}
-
-.qa h2 {
-    text-align: center;
-}
-
-.qa p {
-    font-size: 25px;
-}
-
-.qa hr {
-    width: 560px;
-    text-align: left;
-    margin: 0 auto;
-    display: inline-block;
-
-} */
-
 
 /* ------------------------------------------------dashboard---------------------------------------- */
 .filter {
@@ -653,7 +642,6 @@ table {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    /* height: 450px; */
     background: white;
     text-align: center;
     border-collapse: collapse;
@@ -675,7 +663,7 @@ table {
 }
 
 /* ------------------------- */
-*/ .progress-bar {
+.progress-bar {
     width: 0;
     /* Initial width is 0% */
     height: 100%;
@@ -713,9 +701,11 @@ th {
 th,
 td {
     padding: 12px 15px;
-    border-bottom:1px solid #060606;
+    border-bottom: 1px solid #060606;
 }
+
 /* 
 tr:nth-child(odd) {
     background-color: rgb(225, 231, 236);
 } */
+/* ------------------------------------------------------------------- */

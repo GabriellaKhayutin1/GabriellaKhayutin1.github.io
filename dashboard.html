@@ -17,7 +17,7 @@
                 <h1>Gabriella Khayutin</h1>
 
                 <ul>
-                    
+
                     <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="./f&q.html">F&Q</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -41,16 +41,16 @@
             </tr>
             <tr>
             <tr>
-                
+
                 <td rowspan="3">Quartile 1</td>
                 <td>Program and Career Orientention</td>
                 <td>Assesment Website</td>
                 <td><select>
-                    <option value="Pass">Pass</option>
-                    <option value="Fail">Fail</option>
-                    <option value="Incomplete">Incomplete</option>
-                    
-                </select></td>
+                        <option value="Pass">Pass</option>
+                        <option value="Fail">Fail</option>
+                        <option value="Incomplete">Incomplete</option>
+
+                    </select></td>
                 <td>2.5</td>
             </tr>
             <tr>
@@ -61,13 +61,13 @@
                         <option value="Pass">Pass</option>
                         <option value="Fail">Fail</option>
                         <option value="Incomplete">Incomplete</option>
-                        
+
                     </select>
                 </td>
                 <td>5</td>
             </tr>
             <tr>
-               
+
                 <td>Programing Basics</td>
                 <td>Case study exam</td>
                 <td>
@@ -75,7 +75,7 @@
                         <option value="Pass">Pass</option>
                         <option value="Fail">Fail</option>
                         <option value="Incomplete">Incomplete</option>
-                        
+
                     </select>
                 </td>
                 <td>5</td>
@@ -89,7 +89,7 @@
                         <option value="Pass">Pass</option>
                         <option value="Fail">Fail</option>
                         <option value="Incomplete">Incomplete</option>
-                        
+
                     </select>
                 </td>
                 <td>10</td>
@@ -103,7 +103,7 @@
                         <option value="Pass">Pass</option>
                         <option value="Fail">Fail</option>
                         <option value="Incomplete">Incomplete</option>
-                        
+
                     </select>
                 </td>
                 <td>5</td>
@@ -116,7 +116,7 @@
                         <option value="Pass">Pass</option>
                         <option value="Fail">Fail</option>
                         <option value="Incomplete">Incomplete</option>
-                        
+
                     </select>
                 </td>
                 <td>7.5</td>
@@ -126,11 +126,11 @@
                 <td>Framework project 2</td>
                 <td>Assesment Website</td>
                 <td><select>
-                    <option value="Pass">Pass</option>
-                    <option value="Fail">Fail</option>
-                    <option value="Incomplete">Incomplete</option>
-                    
-                </select></td>
+                        <option value="Pass">Pass</option>
+                        <option value="Fail">Fail</option>
+                        <option value="Incomplete">Incomplete</option>
+
+                    </select></td>
                 <td>10</td>
             </tr>
             <tr>
@@ -138,34 +138,34 @@
                 <td>Personal Professional Development</td>
                 <td>Final Delivery/ Report of acceptance Test/ IT portfolio</td>
                 <td><select>
-                    <option value="Pass">Pass</option>
-                    <option value="Fail">Fail</option>
-                    <option value="Incomplete">Incomplete</option>
-                    
-                </select></td>
+                        <option value="Pass">Pass</option>
+                        <option value="Fail">Fail</option>
+                        <option value="Incomplete">Incomplete</option>
+
+                    </select></td>
                 <td>12.5</td>
             </tr>
             <tr>
-                
+
                 <td>IT Personality 1</td>
                 <td rowspan="2">Portfolio</td>
                 <td><select>
-                    <option value="Pass">Pass</option>
-                    <option value="Fail">Fail</option>
-                    <option value="Incomplete">Incomplete</option>
-                    
-                </select></td>
+                        <option value="Pass">Pass</option>
+                        <option value="Fail">Fail</option>
+                        <option value="Incomplete">Incomplete</option>
+
+                    </select></td>
                 <td>1.25</td>
             </tr>
             <tr>
                 <td>IT Personality 2</td>
                 <!-- <td>Assesment Website</td> -->
                 <td><select>
-                    <option value="Pass">Pass</option>
-                    <option value="Fail">Fail</option>
-                    <option value="Incomplete">Incomplete</option>
-                    
-                </select></td>
+                        <option value="Pass">Pass</option>
+                        <option value="Fail">Fail</option>
+                        <option value="Incomplete">Incomplete</option>
+
+                    </select></td>
                 <td>1.25</td>
             </tr>
         </table>
@@ -177,26 +177,26 @@
         <script>
             const progressBar = document.querySelector(".progress-bar");
             const percentageLabel = document.querySelector(".percentage-label");
-    
+
             // Update the progress and percentage when the progress bar is clicked
             progressBar.addEventListener("click", (event) => {
                 const clickedX = event.clientX - progressBar.getBoundingClientRect().left;
                 const progressBarWidth = progressBar.clientWidth;
                 const percent = (clickedX / progressBarWidth) * 100;
-                
+
                 progressBar.style.width = percent + "%";
                 percentageLabel.innerText = percent.toFixed(0) + "%";
             });
-    
+
             // Example: Initialize progress to 50%
             updateProgress(5);
-    
+
             // Update the progress and percentage (e.g., 50%)
             function updateProgress(percent) {
                 progressBar.style.width = percent + "%";
                 percentageLabel.innerText = percent.toFixed(0) + "%";
             }
-        </script> 
+        </script>
 
     </body>
     <footer class="footer-dash">
