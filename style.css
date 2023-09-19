@@ -162,7 +162,6 @@ nav ul li a {
 }
 
 /* --------------------------for the header of all pages-till here -------------------------------------*/
-
 .header-profile h1 {
     text-align: left;
 }
@@ -349,7 +348,7 @@ nav ul li {
 }
 
 .about-text h2 {
-    color: black;
+    color: rgb(245, 136, 154);
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -575,7 +574,7 @@ footer {
 }
 
 .accordion {
-    background-color: white;
+    background-color: rgb(223, 251, 247);
     color: black;
     cursor: pointer;
     font-size: 1rem;
@@ -597,14 +596,14 @@ footer {
 
 .active,
 .accordion:hover {
-    background-color: beige;
+    background-color: rgb(252, 252, 245);
 }
 
 .pannel {
     padding: 0 2rem 2.5rem 2rem;
     background-color: white;
     overflow: hidden;
-    background-color: beige;
+    background-color: rgb(252, 252, 245);
     display: none;
 }
 
@@ -664,9 +663,9 @@ table {
 
 /* ------------------------- */
 .progress-bar {
-    width: 0;
+    width: 0px;
     /* Initial width is 0% */
-    height: 100%;
+    height: 3%;
     /* Height of the progress bar */
     background-color: #bae8e8;
     /* Color of the progress bar */
@@ -709,3 +708,58 @@ tr:nth-child(odd) {
     background-color: rgb(225, 231, 236);
 } */
 /* ------------------------------------------------------------------- */
+.container-blog1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the text on the left */
+.text-blog1 {
+    flex: 1; /* Make the text take up the remaining space */
+    padding: 20px; /* Add some padding for spacing */
+    margin-top: 50px;
+    font-weight: bold;
+}
+.text-blog1 p{
+    font-size: 25px;
+    text-align: left;
+}
+
+/* Style for the image on the right */
+.image {
+    max-width: 50%; /* Limit the image width */
+    height: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+
+}
+.blog1-title{
+    font-size: 50px;
+    margin-top: 109px;
+    color: rgb(245, 121, 142);
+    margin-right: 750px;
+}
+.firstwebsite{
+    margin-bottom: 250px;
+    padding: 12px 34px;
+    font-size: 18px;
+    background-color: rgb(243, 122, 216);
+    position: usticky;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 300px;
+    margin-bottom: 200px;
+}
+.firstwebsite a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+.firstwebsite:hover {
+    border: 2px solid silver;
+    background: antiquewhite;
+    transition: 1s;
+}
