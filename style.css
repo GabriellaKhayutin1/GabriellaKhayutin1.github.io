@@ -15,6 +15,20 @@
     top: 0;
 
 }
+.active{
+    font-weight: bold;
+    background-color: #e8d1ec;
+    color: rgb(8, 8, 8);
+    /* padding-top: 25px; */
+    
+   
+}
+/* .active a{ */
+    /* background-color: #e8d1ec;
+    color: rgb(8, 8, 8); */
+    /* border-radius: 20px; */
+    /* padding-top: 25px; */
+
 
 .hero-btn {
     text-decoration: none;
@@ -117,7 +131,13 @@ nav {
     flex-wrap: wrap;
 
 }
+li a:hover{
+    background-color: #e8d1ec;
+    color: rgb(8, 8, 8);
+    border-radius: 25px;
+    border:  1px solid #000;
 
+}
 nav ul {
     float: right;
     position: fixed;
@@ -544,7 +564,7 @@ footer {
     color: #000;
     letter-spacing: 1.5px;
     display: inline-block;
-    background-color: rgb(243, 122, 216);
+    background-color: rgb(243, 183, 230);
     padding: 8px 15px;
     border-radius: 30px;
 
@@ -634,31 +654,18 @@ footer {
 
 }
 
-table {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+table{
     width: 60%;
-    background: white;
-    text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
-    border-radius: 5px 12px 0 0;
+    border-radius: 10px 10px 0 0;
     overflow: hidden;
-    box-shadow: 0 12px 5px silver;
-}
-
-/* --------------------- */
-
-
-.progress-bar {
-    width: 0;
-    height: 2%;
-    background-color: #4CAF50;
-    transition: width 0.3s ease-in-out;
-    margin-top: 45%;
+    box-shadow: 0 2px 12px  rgba(103, 103, 79);
+    background: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
 }
 
 /* ------------------------- */
@@ -672,14 +679,7 @@ table {
     transition: width 0.3s ease-in-out;
     /* Smooth transition animation */
     cursor: pointer;
-}
-
-.percentage-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000;
+    margin-top:2% ;
 }
 
 .percentage-label {
@@ -712,6 +712,7 @@ tr:nth-child(odd) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 35px;
 }
 
 /* Style for the text on the left */
@@ -721,17 +722,35 @@ tr:nth-child(odd) {
     margin-top: 50px;
     font-weight: bold;
 }
+.text-blog1 h1{
+    /* text-align: center; */
+    margin-bottom: 50px;
+    /* margin-right: 75px; */
+    margin-left: 525px;
+    color: rgb(245, 136, 154);
+    font-size: 350%;
+    margin-bottom: 300px;
+}
 .text-blog1 p{
     font-size: 25px;
     text-align: left;
+    /* Style for the text bubble container *
+    background-color: #f0f0f0; /* Background color for the text bubble */
+    padding: 20px; /* Add padding for spacing within the text bubble */
+    border-radius: 10px; /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+    width: 60%; /* Set the width of the text bubble */
+    /* margin-left: 40px; Add margin to separate the text bubble from the image */
+    margin-left: 125px;
 }
 
 /* Style for the image on the right */
 .image {
     max-width: 50%; /* Limit the image width */
     height: auto;
-    border-radius: 50%;
-    margin-top: 50px;
+    border-radius: 2% 35%;
+    margin-top: 400px;
+    margin-right: 125px;
 
 }
 .blog1-title{
@@ -742,24 +761,62 @@ tr:nth-child(odd) {
 }
 .firstwebsite{
     margin-bottom: 250px;
-    padding: 12px 34px;
-    font-size: 18px;
-    background-color: rgb(243, 122, 216);
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color:  rgb(245, 121, 142);
     position: usticky;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
-    margin-left: 300px;
+    margin-left: 230px;
     margin-bottom: 200px;
+    color: #000;
+    letter-spacing: 1.5px;
 }
 .firstwebsite a {
     text-decoration: none;
     color: #000;
     text-align: center;
+    
 }
 .firstwebsite:hover {
     border: 2px solid silver;
     background: antiquewhite;
     transition: 1s;
+}
+/* -----------------------------Swotanalyses-------------------------------- */
+.blog2-title{
+    margin-top: 150px;
+}
+.container-blog2 {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+    justify-content: space-between;
+    align-items: center;
+}
+.text-blog2 p{
+    font-size: 25px;
+    text-align: left;
+    /* Style for the text bubble container *
+    background-color: #f0f0f0; /* Background color for the text bubble */
+    padding: 20px; /* Add padding for spacing within the text bubble */
+    border-radius: 10px; /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+    width: 60%; /* Set the width of the text bubble */
+    /* margin-left: 40px; Add margin to separate the text bubble from the image */
+    margin-left: 45px;
+    display: grid;
+    /* float: left;
+    display: flex; */
+}
+.imageblog2{
+    max-width: 25%; /* Limit the image width */
+    height: auto;
+    border-radius: 2% 35%;
+    /* margin-top: 150px; */
+    margin-left: 1000px;
+    
+
+
 }
