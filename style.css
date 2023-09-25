@@ -449,7 +449,7 @@ nav ul li {
 
 footer {
     text-align: center;
-    padding: 5px;
+    padding: 1%;
     background-color: antiquewhite;
 }
 
@@ -477,6 +477,11 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     margin-top: 150px;
+
+}
+.mainblog{
+    background-color: rgb(251, 245, 236);
+    
 }
 
 .container2-blog {
@@ -753,8 +758,6 @@ tr:nth-child(odd) {
 .text-blog1 p {
     font-size: 25px;
     text-align: left;
-    /* Style for the text bubble container *
-    background-color: #f0f0f0; /* Background color for the text bubble */
     padding: 20px;
     /* Add padding for spacing within the text bubble */
     border-radius: 10px;
@@ -823,44 +826,101 @@ tr:nth-child(odd) {
 }
 
 /* -----------------------------Swotanalyses-------------------------------- */
-.blog2-title {
-    margin-top: 150px;
-}
-
-.container-blog2 {
+.swotanalyses{
     display: flex;
-    flex-direction: row-reverse;
-    /* Reverse the order of flex items */
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(250, 240, 226);
 }
-
-.text-blog2 p {
+.swot-text h1{
+    text-align: center;
+    margin-top: 8%;
+    font-size: 250%;
+    color: rgb(181, 73, 91);
+    font-size: 350%;
+    
+}
+.swot-text p{
     font-size: 25px;
+   
+}
+.swot-text1{
+    float: left;
+    margin-top: 5%;
+    /* font-size: 25px; */
+    /* text-align: left; */
+    padding: 30px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 45%;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+    margin-left: 3%;
+}
+.swot-text2{
+    float: right;
+    margin-top: 5%;
+    /* font-size: 45px; */
     text-align: left;
-    /* Style for the text bubble container *
-    background-color: #f0f0f0; /* Background color for the text bubble */
     padding: 20px;
     /* Add padding for spacing within the text bubble */
     border-radius: 10px;
     /* Rounded corners for the text bubble */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     /* Optional: Add a shadow for depth */
-    width: 60%;
-    /* Set the width of the text bubble */
-    /* margin-left: 40px; Add margin to separate the text bubble from the image */
-    margin-left: 45px;
-    /* display: grid; */
-    /* float: left;
-    display: flex; */
-    float: left;
-    margin-top: 2%;
-}
+    width: 45%;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+    margin-right: 3%;
 
-.imageblog2 {
-    max-width: 25%;
+}
+.swot-text3{
+    float: left;
+    margin-top: 7%;
+    /* font-size: 25px; */
+    /* text-align: left; */
+    padding: 35px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 45%;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+    margin-left: 3%;
+
+    
+}
+.swot-text4{
+    float: right;
+    margin-top: 6.5%;
+    /* font-size: 45px; */
+    text-align: left;
+    padding: 20px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 45%;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+  /* margin-bottom: 50%; */
+  margin-right: 3%;
+}
+.swot-text img{
+    width: 25%;
+    margin-left: 35% ;
     height: auto;
-    border-radius: 2% 35%;
-    margin-bottom: 15%;
-    margin-left: 5%;
+    margin-top: 2%;
+    display: inline-block;
+    max-width: 100%;
+}
+/* .inspiringquotes{
+    display: flex;
+    display: inline-block;
+    width: 25%;
+    height: auto; */
 }
