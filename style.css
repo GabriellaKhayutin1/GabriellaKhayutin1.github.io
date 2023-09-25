@@ -15,19 +15,22 @@
     top: 0;
 
 }
-.active{
+
+.active {
     font-weight: bold;
     background-color: #e8d1ec;
     color: rgb(8, 8, 8);
     /* padding-top: 25px; */
-    
-   
+
+
 }
-/* .active a{ */
-    /* background-color: #e8d1ec;
-    color: rgb(8, 8, 8); */
-    /* border-radius: 20px; */
-    /* padding-top: 25px; */
+
+li.active {
+    background-color: #e8d1ec;
+    color: rgb(8, 8, 8);
+    border-radius: 25px;
+    /* border:  2px solid #000; */
+}
 
 
 .hero-btn {
@@ -58,15 +61,19 @@
     transition: 1s;
 }
 
+/* .container ul li:hover::after {
+    width: 100%;
+}
+
 .container ul li::after {
     content: "";
     width: 0%;
-    height: 3px;
-    background: darkgray;
+    height: 2px;
+    background: silver;
     display: block;
     margin: auto;
     transition: 0.7s;
-}
+} */
 
 li {
     display: inline;
@@ -76,18 +83,18 @@ li {
 li a {
     font-size: 25px;
     display: block;
-    padding: 8px;
+    padding: 2%;
     color: antiquewhite;
-    display: block;
+    /* display: block; */
     color: #666;
     text-align: center;
     padding: 1px 0px;
     text-decoration: none;
 }
-
+/* 
 .container ul li:hover::after {
     width: 64%;
-}
+} */
 
 .container h1 {
     color: var(--titleText);
@@ -131,13 +138,15 @@ nav {
     flex-wrap: wrap;
 
 }
-li a:hover{
+
+li a:hover {
     background-color: #e8d1ec;
     color: rgb(8, 8, 8);
     border-radius: 25px;
-    border:  1px solid #000;
+    /* border: 0.5px solid #000; */
 
 }
+
 nav ul {
     float: right;
     position: fixed;
@@ -233,8 +242,8 @@ nav ul li {
     font-size: 25px;
 }
 
-.container-blog ul li:hover::after {
-    width: 64%;
+/* .container-blog ul li:hover::after {
+    width: 85%;
 }
 
 .container-blog ul li::after {
@@ -245,7 +254,7 @@ nav ul li {
     display: block;
     margin: auto;
     transition: 0.7s;
-}
+} */
 
 .container-blog ul {
     font-size: 25px;
@@ -265,7 +274,7 @@ nav ul li {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    width: 100%;
+    /* width: 100%; */
     height: 100px;
     background-color: lightgrey;
     text-align: center;
@@ -274,7 +283,7 @@ nav ul li {
 
 .bar-logo img {
     margin: -50;
-    margin-right: -835px;
+    margin-left: 90%;
     margin-top: -100;
     padding-top: 25px;
     width: 12%;
@@ -324,7 +333,7 @@ nav ul li {
     font-size: 25px;
 }
 
-.container-about ul li:hover::after {
+/* .container-about ul li:hover::after {
     width: 64%;
 }
 
@@ -336,7 +345,7 @@ nav ul li {
     display: block;
     margin: auto;
     transition: 0.7s;
-}
+} */
 
 .container-about ul {
     font-size: 25px;
@@ -564,15 +573,16 @@ footer {
     color: #000;
     letter-spacing: 1.5px;
     display: inline-block;
-    background-color: rgb(243, 183, 230);
+    background-color: rgb(229, 163, 211);
     padding: 8px 15px;
     border-radius: 30px;
+    font-weight: bold;
 
 }
 
 .content a:hover {
-    background-color: rgb(183, 233, 233);
-    color: #666;
+    background-color: rgb(243, 183, 230);
+    color: black;
     transition: 1s ease;
 }
 
@@ -654,13 +664,13 @@ footer {
 
 }
 
-table{
+table {
     width: 60%;
     border-collapse: collapse;
     border-spacing: 0;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
-    box-shadow: 0 2px 12px  rgba(103, 103, 79);
+    box-shadow: 0 2px 12px rgba(103, 103, 79);
     background: #ffffff;
     text-align: center;
     margin-left: auto;
@@ -679,7 +689,7 @@ table{
     transition: width 0.3s ease-in-out;
     /* Smooth transition animation */
     cursor: pointer;
-    margin-top:2% ;
+    margin-top: 2%;
 }
 
 .percentage-label {
@@ -707,116 +717,150 @@ td {
 tr:nth-child(odd) {
     background-color: rgb(225, 231, 236);
 } */
-/* ------------------------------------------------------------------- */
+/* --------------------programming experience----------------------------------------------- */
 .container-blog1 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 35px;
+    /* align-items: center; */
+    /* padding-top: 35px; */
+    background-color: rgb(250, 240, 226);
 }
 
 /* Style for the text on the left */
 .text-blog1 {
-    flex: 1; /* Make the text take up the remaining space */
-    padding: 20px; /* Add some padding for spacing */
-    margin-top: 50px;
+    flex: 1;
+    /* Make the text take up the remaining space */
+    padding: 20px;
+    /* Add some padding for spacing */
+    /* margin-top: 50px; */
     font-weight: bold;
+    float: left;
 }
-.text-blog1 h1{
+
+.container-blog1 h1 {
     /* text-align: center; */
-    margin-bottom: 50px;
+    /* margin-bottom: 20%; */
     /* margin-right: 75px; */
-    margin-left: 525px;
-    color: rgb(245, 136, 154);
+    /* margin-left: 525px; */
+    color: rgb(181, 73, 91);
     font-size: 350%;
-    margin-bottom: 300px;
+    margin-top: 8%;
+    text-align: center;
+    /* margin-bottom: 550px; */
+
 }
-.text-blog1 p{
+
+.text-blog1 p {
     font-size: 25px;
     text-align: left;
     /* Style for the text bubble container *
     background-color: #f0f0f0; /* Background color for the text bubble */
-    padding: 20px; /* Add padding for spacing within the text bubble */
-    border-radius: 10px; /* Rounded corners for the text bubble */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
-    width: 60%; /* Set the width of the text bubble */
+    padding: 20px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 50%;
+    margin-top: 10%;
+    /* Set the width of the text bubble */
     /* margin-left: 40px; Add margin to separate the text bubble from the image */
-    margin-left: 125px;
+    /* margin-left: 45px; */
+    /* display: grid; */
+    /* float: left;
+    display: flex; */
+    float: left;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+    
 }
 
-/* Style for the image on the right */
-.image {
-    max-width: 50%; /* Limit the image width */
-    height: auto;
+.container-blog1 img {
+    flex-wrap: wrap;
+    max-width: 50%;
+    /* Limit the image width */
+    /* height: auto; */
     border-radius: 2% 35%;
-    margin-top: 400px;
-    margin-right: 125px;
+    /* margin-top: 55%; */
+    /* margin-right: 5%; */
+    float: right;
+    margin-top: 5%;
+    /* flex: 1; */
+    /* margin-bottom: 100%; */
+
 
 }
-.blog1-title{
-    font-size: 50px;
-    margin-top: 109px;
-    color: rgb(245, 121, 142);
-    margin-right: 750px;
-}
-.firstwebsite{
-    margin-bottom: 250px;
+
+.firstwebsite {
+    /* margin-bottom: 250px; */
     padding: 8px 15px;
     font-size: 15px;
-    background-color:  rgb(245, 121, 142);
-    position: usticky;
+    background-color: rgb(245, 121, 142);
+    /* position: usticky; */
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     margin-left: 230px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     color: #000;
     letter-spacing: 1.5px;
+    margin-top: 5%;
+    float: left;
 }
+
 .firstwebsite a {
     text-decoration: none;
     color: #000;
     text-align: center;
-    
+
 }
+
 .firstwebsite:hover {
     border: 2px solid silver;
     background: antiquewhite;
     transition: 1s;
 }
+
 /* -----------------------------Swotanalyses-------------------------------- */
-.blog2-title{
+.blog2-title {
     margin-top: 150px;
 }
+
 .container-blog2 {
     display: flex;
-    flex-direction: row-reverse; /* Reverse the order of flex items */
+    flex-direction: row-reverse;
+    /* Reverse the order of flex items */
     justify-content: space-between;
     align-items: center;
 }
-.text-blog2 p{
+
+.text-blog2 p {
     font-size: 25px;
     text-align: left;
     /* Style for the text bubble container *
     background-color: #f0f0f0; /* Background color for the text bubble */
-    padding: 20px; /* Add padding for spacing within the text bubble */
-    border-radius: 10px; /* Rounded corners for the text bubble */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
-    width: 60%; /* Set the width of the text bubble */
+    padding: 20px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 60%;
+    /* Set the width of the text bubble */
     /* margin-left: 40px; Add margin to separate the text bubble from the image */
     margin-left: 45px;
-    display: grid;
+    /* display: grid; */
     /* float: left;
     display: flex; */
+    float: left;
+    margin-top: 2%;
 }
-.imageblog2{
-    max-width: 25%; /* Limit the image width */
+
+.imageblog2 {
+    max-width: 25%;
     height: auto;
     border-radius: 2% 35%;
-    /* margin-top: 150px; */
-    margin-left: 1000px;
-    
-
-
+    margin-bottom: 15%;
+    margin-left: 5%;
 }
