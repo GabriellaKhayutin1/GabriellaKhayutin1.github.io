@@ -91,6 +91,7 @@ li a {
     padding: 1px 0px;
     text-decoration: none;
 }
+
 /* 
 .container ul li:hover::after {
     width: 64%;
@@ -479,9 +480,10 @@ footer {
     margin-top: 150px;
 
 }
-.mainblog{
+
+.mainblog {
     background-color: rgb(251, 245, 236);
-    
+
 }
 
 .container2-blog {
@@ -683,7 +685,7 @@ table {
     margin-top: 140px;
 }
 
-/* ------------------------- */
+/* ----------Progress Bar--------------- */
 .progress-bar {
     width: 0px;
     /* Initial width is 0% */
@@ -696,17 +698,7 @@ table {
     cursor: pointer;
     margin-top: 2%;
 }
-
-.percentage-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000;
-}
-
 th {
-    /* background: lightpink; */
     color: black;
     text-transform: uppercase;
     background-color: rgb(230, 239, 203);
@@ -717,41 +709,99 @@ td {
     padding: 12px 15px;
     border-bottom: 1px solid #060606;
 }
+/* -------------------------------------------Study Choice----------------------------------- */
 
-/* 
-tr:nth-child(odd) {
-    background-color: rgb(225, 231, 236);
-} */
+.container-choice {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 240, 226);
+}
+
+.text-choice {
+    flex: 1;
+    padding: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.container-choice h1 {
+    color:  rgb(232, 74, 190);
+    text-shadow: 3px 4px pink;
+    font-size: 350%;
+    margin-top: 8%;
+    text-align: center;
+
+}
+
+.text-choice p {
+    font-size: 25px;
+    text-align: left;
+    padding: 25px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 50%;
+    margin-top: 5%;
+    float: left;
+    margin-left: 5%;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+
+}
+
+.container-choice img {
+    flex-wrap: wrap;
+    max-width: 35%;
+    margin-left: 10%;
+    border-radius: 2% 35%;
+    /* float: right; */
+    margin-top: 5%;
+}
+.firstwebsite {
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color: rgb(235, 146, 212);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.firstwebsite a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+}
+
+.firstwebsite:hover {
+    border: 2px solid silver;
+    background: antiquewhite;
+    transition: 1s;
+}
 /* --------------------programming experience----------------------------------------------- */
 .container-blog1 {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* padding-top: 35px; */
     background-color: rgb(250, 240, 226);
 }
 
-/* Style for the text on the left */
 .text-blog1 {
     flex: 1;
-    /* Make the text take up the remaining space */
     padding: 20px;
-    /* Add some padding for spacing */
-    /* margin-top: 50px; */
     font-weight: bold;
     float: left;
 }
 
 .container-blog1 h1 {
-    /* text-align: center; */
-    /* margin-bottom: 20%; */
-    /* margin-right: 75px; */
-    /* margin-left: 525px; */
-    color: rgb(181, 73, 91);
+    color:  rgb(232, 74, 190);
+    text-shadow: 3px 4px pink;
     font-size: 350%;
     margin-top: 8%;
     text-align: center;
-    /* margin-bottom: 550px; */
 
 }
 
@@ -766,46 +816,28 @@ tr:nth-child(odd) {
     /* Optional: Add a shadow for depth */
     width: 50%;
     margin-top: 10%;
-    /* Set the width of the text bubble */
-    /* margin-left: 40px; Add margin to separate the text bubble from the image */
-    /* margin-left: 45px; */
-    /* display: grid; */
-    /* float: left;
-    display: flex; */
     float: left;
     background-image: linear-gradient(var(--primary), var(--secondary));
     /* margin-right: 10%; */
-    
+
 }
 
 .container-blog1 img {
     flex-wrap: wrap;
     max-width: 50%;
-    /* Limit the image width */
-    /* height: auto; */
     border-radius: 2% 35%;
-    /* margin-top: 55%; */
-    /* margin-right: 5%; */
     float: right;
     margin-top: 5%;
-    /* flex: 1; */
-    /* margin-bottom: 100%; */
-
-
 }
-
 .firstwebsite {
-    /* margin-bottom: 250px; */
     padding: 8px 15px;
     font-size: 15px;
-    background-color: rgb(245, 121, 142);
-    /* position: usticky; */
+    background-color: rgb(235, 146, 212);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     margin-left: 230px;
-    /* margin-bottom: 200px; */
     color: #000;
     letter-spacing: 1.5px;
     margin-top: 5%;
@@ -825,24 +857,182 @@ tr:nth-child(odd) {
     transition: 1s;
 }
 
+/* -----------------------------ICT Field------------------------------------ */
+.container-field {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 240, 226);
+}
+
+.text-field {
+    flex: 1;
+    padding: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.container-field h1 {
+    color:  rgb(232, 74, 190);
+    text-shadow: 3px 4px pink;
+    font-size: 350%;
+    margin-top: 8%;
+    text-align: center;
+
+}
+
+.text-field p {
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+    /* Add padding for spacing within the text bubble */
+    border-radius: 10px;
+    /* Rounded corners for the text bubble */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a shadow for depth */
+    width: 50%;
+    margin-top: 5%;
+    float: left;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    /* margin-right: 10%; */
+
+}
+
+.container-field img {
+    flex-wrap: wrap;
+    max-width: 35%;
+    border-radius: 2%;
+    float: right;
+    margin-right: 7%;
+    margin-top: 13%;
+}
+.container-field2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 240, 226);
+}
+
+.text-field2 {
+    flex: 1;
+    padding: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.text-field2 p {
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin-top: 5%;
+    float: left;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+}
+
+.container-field2 img {
+    flex-wrap: wrap;
+    max-width: 35%;
+    border-radius: 2%;
+    float: right;
+    margin-right: 7%;
+    margin-top: 13%;
+
+}
+
+.container-field3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(250, 240, 226);
+}
+
+.text-field3 {
+    flex: 1;
+    padding: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.text-field3 p {
+    font-size: 25px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin-top: 5%;
+    float: left;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+
+}
+
+.container-field3 img {
+    flex-wrap: wrap;
+    max-width: 35%;
+    /* Limit the image width */
+    /* height: auto; */
+    border-radius: 2%;
+    /* margin-top: 55%; */
+    /* margin-right: 5%; */
+    float: right;
+    margin-right: 7%;
+    margin-top: 13%;
+    /* flex: 1; */
+    /* margin-bottom: 100%; */
+
+}
+
+.goback {
+
+    padding: 8px 15px;
+    font-size: 15px;
+    /* background-color: rgb(246, 197, 205); */
+    background-color: rgb(235, 146, 212);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1.5px;
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+.goback a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+}
+
+.goback:hover {
+    border: 2px solid silver;
+    background: antiquewhite;
+    transition: 1s;
+}
+
 /* -----------------------------Swotanalyses-------------------------------- */
-.swotanalyses{
+.swotanalyses {
     display: flex;
     background-color: rgb(250, 240, 226);
 }
-.swot-text h1{
+
+.swot-text h1 {
     text-align: center;
     margin-top: 8%;
     font-size: 250%;
-    color: rgb(181, 73, 91);
+    color:  rgb(232, 74, 190);
+    text-shadow: 3px 4px pink;
     font-size: 350%;
-    
+
 }
-.swot-text p{
+
+.swot-text p {
     font-size: 25px;
-   
+
 }
-.swot-text1{
+
+.swot-text1 {
     float: left;
     margin-top: 5%;
     /* font-size: 25px; */
@@ -858,7 +1048,8 @@ tr:nth-child(odd) {
     /* margin-right: 10%; */
     margin-left: 3%;
 }
-.swot-text2{
+
+.swot-text2 {
     float: right;
     margin-top: 5%;
     /* font-size: 45px; */
@@ -875,7 +1066,8 @@ tr:nth-child(odd) {
     margin-right: 3%;
 
 }
-.swot-text3{
+
+.swot-text3 {
     float: left;
     margin-top: 7%;
     /* font-size: 25px; */
@@ -891,9 +1083,10 @@ tr:nth-child(odd) {
     /* margin-right: 10%; */
     margin-left: 3%;
 
-    
+
 }
-.swot-text4{
+
+.swot-text4 {
     float: right;
     margin-top: 6.5%;
     /* font-size: 45px; */
@@ -907,20 +1100,23 @@ tr:nth-child(odd) {
     width: 45%;
     background-image: linear-gradient(var(--primary), var(--secondary));
     /* margin-right: 10%; */
-  /* margin-bottom: 50%; */
-  margin-right: 3%;
+    /* margin-bottom: 50%; */
+    margin-right: 3%;
 }
-.swot-text img{
-    width: 25%;
-    margin-left: 35% ;
-    height: auto;
-    margin-top: 2%;
-    display: inline-block;
-    max-width: 100%;
+
+.swot-img{
+    display: flex;
+    /* max-width: 20%; */
 }
+.swot-img img{
+    max-width: 20%;
+    text-align: center;
+    margin-left: 3%;
+    width: auto;
+}
+
 /* .inspiringquotes{
     display: flex;
     display: inline-block;
     width: 25%;
     height: auto; */
-}
