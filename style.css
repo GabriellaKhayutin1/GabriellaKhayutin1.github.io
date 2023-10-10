@@ -29,21 +29,20 @@ li.active {
     background-color: #e8d1ec;
     color: rgb(8, 8, 8);
     border-radius: 25px;
-    /* border:  2px solid #000; */
 }
 
 
 .hero-btn {
     text-decoration: none;
     color: black;
-    /* border: 1px solid rgb(8, 8, 8); */
     padding: 12px 34px;
-    font-size: 18px;
-    background: #dae1e3;
+    font-size: 20px;
+    background: rgb(225, 184, 191);
     position: usticky;
     cursor: pointer;
     border-radius: 15px;
     font-weight: bold;
+    border: none;
 
 
 }
@@ -56,24 +55,9 @@ li.active {
 }
 
 .hero-btn:hover {
-    border: 2px solid silver;
-    background: antiquewhite;
+    background: lightblue;
     transition: 1s;
 }
-
-/* .container ul li:hover::after {
-    width: 100%;
-}
-
-.container ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: silver;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-} */
 
 li {
     display: inline;
@@ -82,26 +66,21 @@ li {
 
 li a {
     font-size: 25px;
-    display: block;
-    padding: 2%;
+    padding: 0.5%;
     color: antiquewhite;
-    /* display: block; */
-    color: #666;
+    color: black;
     text-align: center;
-    padding: 1px 0px;
+    padding: 7px;
     text-decoration: none;
 }
 
-/* 
-.container ul li:hover::after {
-    width: 64%;
-} */
 
 .container h1 {
     color: var(--titleText);
     text-shadow: rgb(248, 248, 255) 4px 2px;
     text-transform: capitalize;
     font-size: 35px;
+    margin-left: 3%;
 }
 
 h1 {
@@ -110,7 +89,8 @@ h1 {
 }
 
 h2 {
-    color: red;
+    color: black;
+    text-shadow: 2px 2px #b9b5b5;
 }
 
 .header-profile {
@@ -144,7 +124,6 @@ li a:hover {
     background-color: #e8d1ec;
     color: rgb(8, 8, 8);
     border-radius: 25px;
-    /* border: 0.5px solid #000; */
 
 }
 
@@ -243,20 +222,6 @@ nav ul li {
     font-size: 25px;
 }
 
-/* .container-blog ul li:hover::after {
-    width: 85%;
-}
-
-.container-blog ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: silver;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-} */
-
 .container-blog ul {
     font-size: 25px;
 }
@@ -266,6 +231,7 @@ nav ul li {
     text-shadow: rgb(248, 248, 255) 4px 2px;
     text-transform: capitalize;
     font-size: 35px;
+    margin-left: 3%;
 
 }
 
@@ -275,9 +241,8 @@ nav ul li {
     list-style-type: none;
     margin: 0;
     padding: 10px;
-    /* width: 100%; */
     height: 100px;
-    background-color: lightgrey;
+    background-color: beige;
     text-align: center;
 
 }
@@ -287,7 +252,7 @@ nav ul li {
     margin-left: 90%;
     margin-top: -100;
     padding-top: 25px;
-    width: 12%;
+    width: 10%;
     height: 100px;
 
 }
@@ -323,6 +288,10 @@ nav ul li {
     margin-top: 10%;
 }
 
+.swot-footer {
+    margin-top: 0%;
+}
+
 /* //-------------------------------About Me------------------------------------------------// */
 
 .container-about {
@@ -334,20 +303,6 @@ nav ul li {
     font-size: 25px;
 }
 
-/* .container-about ul li:hover::after {
-    width: 64%;
-}
-
-.container-about ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: silver;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
-} */
-
 .container-about ul {
     font-size: 25px;
 }
@@ -357,6 +312,7 @@ nav ul li {
     text-shadow: rgb(248, 248, 255) 4px 2px;
     text-transform: capitalize;
     font-size: 35px;
+    margin-left: 3%;
 
 }
 
@@ -365,7 +321,7 @@ nav ul li {
 .about {
     width: 100%;
     padding: 100px 0px;
-    background-color: rgb(227, 235, 242);
+    background-color: beige;
 }
 
 .main {
@@ -381,9 +337,10 @@ nav ul li {
     color: rgb(245, 136, 154);
     font-size: 75px;
     text-transform: capitalize;
+    text-shadow: 2px 2px pink;
     margin-bottom: 20px;
     text-align: center;
-    /* font-family: open; */
+
 }
 
 .about-text h5 {
@@ -403,7 +360,6 @@ nav ul li {
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-    /* font-family; */
 
 }
 
@@ -415,28 +371,38 @@ nav ul li {
     display: none;
 }
 
-.read-more {
-    text-decoration: none;
-    color: black;
-    padding: 12px 34px;
-    font-size: 12px;
-    background: #bcc7c9;
-    position: usticky;
+button.swotbtn-aboutme {
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color:rgb(245, 136, 154);
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin-left: 35%;
+    margin-top: 5%;
+    border: none;
+}
+
+.swotbtn-aboutme a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
 
 }
 
-.read-more:hover {
-    border: 2px solid rgb(2, 36, 41);
-    background: #cedee2;
+.swotbtn-aboutme:hover {
+    /* border: 2px solid silver; */
+    background: lightblue;
     transition: 1s;
 }
 
-.read-more:focus+.hidden-text {
+.swotbtn-aboutme:focus+.hidden-text {
     display: block;
 }
+
+
 
 .about img {
     height: auto;
@@ -451,7 +417,7 @@ nav ul li {
 footer {
     text-align: center;
     padding: 1%;
-    background-color: antiquewhite;
+    background-image: linear-gradient(var(--primary), var(--secondary))
 }
 
 .footer-dash {
@@ -465,10 +431,6 @@ footer {
 
 /* -------------------contact me-gonna do this later--------------------------- */
 
-/* .headercontact {
-    background-color: beige;
-} */
-
 /* --------------BLOG-------------------- */
 
 .container1-blog {
@@ -477,13 +439,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin-top: 150px;
+    margin-top: 180px;
 
 }
 
 .mainblog {
-    background-color: rgb(251, 245, 236);
-
+    background-color: beige;
 }
 
 .container2-blog {
@@ -492,7 +453,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 .cards {
@@ -566,7 +527,6 @@ footer {
 
 .content h3 {
     margin-top: 5px;
-    /* font-family: ; */
 }
 
 .content p {
@@ -580,7 +540,7 @@ footer {
     color: #000;
     letter-spacing: 1.5px;
     display: inline-block;
-    background-color: rgb(229, 163, 211);
+    background-color: rgb(245, 136, 154);
     padding: 8px 15px;
     border-radius: 30px;
     font-weight: bold;
@@ -588,7 +548,7 @@ footer {
 }
 
 .content a:hover {
-    background-color: rgb(243, 183, 230);
+    background-color: lightblue;
     color: black;
     transition: 1s ease;
 }
@@ -656,7 +616,6 @@ footer {
 
 .faq.active {
     border: 1px solid black;
-    /* Include border for active state */
 }
 
 /* ------------------------------------------------dashboard---------------------------------------- */
@@ -672,7 +631,7 @@ footer {
 }
 
 table {
-    width: 60%;
+    width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
     border-radius: 10px 10px 0 0;
@@ -683,21 +642,23 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 140px;
+    font-size: 20px;
 }
 
 /* ----------Progress Bar--------------- */
 .progress-bar {
     width: 0px;
-    /* Initial width is 0% */
     height: 3%;
-    /* Height of the progress bar */
     background-color: #bae8e8;
-    /* Color of the progress bar */
     transition: width 0.3s ease-in-out;
-    /* Smooth transition animation */
     cursor: pointer;
     margin-top: 2%;
 }
+
+.progress-container {
+    margin-left: 15%;
+}
+
 th {
     color: black;
     text-transform: uppercase;
@@ -709,6 +670,7 @@ td {
     padding: 12px 15px;
     border-bottom: 1px solid #060606;
 }
+
 /* -------------------------------------------Study Choice----------------------------------- */
 
 .container-choice {
@@ -725,8 +687,10 @@ td {
 }
 
 .container-choice h1 {
-    color:  rgb(232, 74, 190);
-    text-shadow: 3px 4px pink;
+    color: rgb(245, 136, 154);
+    font-size: 75px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px pink;
     font-size: 350%;
     margin-top: 8%;
     text-align: center;
@@ -737,17 +701,13 @@ td {
     font-size: 25px;
     text-align: left;
     padding: 25px;
-    /* Add padding for spacing within the text bubble */
     border-radius: 10px;
-    /* Rounded corners for the text bubble */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: Add a shadow for depth */
     width: 50%;
     margin-top: 5%;
     float: left;
     margin-left: 5%;
     background-image: linear-gradient(var(--primary), var(--secondary));
-    /* margin-right: 10%; */
 
 }
 
@@ -756,18 +716,19 @@ td {
     max-width: 35%;
     margin-left: 10%;
     border-radius: 2% 35%;
-    /* float: right; */
     margin-top: 5%;
 }
+
 .firstwebsite {
     padding: 8px 15px;
     font-size: 15px;
-    background-color: rgb(235, 146, 212);
+    background-color: rgb(245, 136, 154);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 1.5px;
+    border: none;
 }
 
 .firstwebsite a {
@@ -778,10 +739,10 @@ td {
 }
 
 .firstwebsite:hover {
-    border: 2px solid silver;
-    background: antiquewhite;
+    background:lightblue;
     transition: 1s;
 }
+
 /* --------------------programming experience----------------------------------------------- */
 .container-blog1 {
     display: flex;
@@ -797,8 +758,10 @@ td {
 }
 
 .container-blog1 h1 {
-    color:  rgb(232, 74, 190);
-    text-shadow: 3px 4px pink;
+    color: rgb(245, 136, 154);
+    font-size: 75px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px pink;
     font-size: 350%;
     margin-top: 8%;
     text-align: center;
@@ -809,16 +772,12 @@ td {
     font-size: 25px;
     text-align: left;
     padding: 20px;
-    /* Add padding for spacing within the text bubble */
     border-radius: 10px;
-    /* Rounded corners for the text bubble */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: Add a shadow for depth */
     width: 50%;
     margin-top: 10%;
     float: left;
     background-image: linear-gradient(var(--primary), var(--secondary));
-    /* margin-right: 10%; */
 
 }
 
@@ -829,10 +788,11 @@ td {
     float: right;
     margin-top: 5%;
 }
+
 .firstwebsite {
     padding: 8px 15px;
     font-size: 15px;
-    background-color: rgb(235, 146, 212);
+    background-color:rgb(245, 136, 154);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
@@ -842,6 +802,7 @@ td {
     letter-spacing: 1.5px;
     margin-top: 5%;
     float: left;
+    border: none;
 }
 
 .firstwebsite a {
@@ -852,8 +813,7 @@ td {
 }
 
 .firstwebsite:hover {
-    border: 2px solid silver;
-    background: antiquewhite;
+    background: lightblue;
     transition: 1s;
 }
 
@@ -872,8 +832,10 @@ td {
 }
 
 .container-field h1 {
-    color:  rgb(232, 74, 190);
-    text-shadow: 3px 4px pink;
+    color: rgb(245, 136, 154);
+    font-size: 75px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px pink;
     font-size: 350%;
     margin-top: 8%;
     text-align: center;
@@ -884,17 +846,12 @@ td {
     font-size: 25px;
     text-align: left;
     padding: 20px;
-    /* Add padding for spacing within the text bubble */
     border-radius: 10px;
-    /* Rounded corners for the text bubble */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Optional: Add a shadow for depth */
     width: 50%;
     margin-top: 5%;
     float: left;
     background-image: linear-gradient(var(--primary), var(--secondary));
-    /* margin-right: 10%; */
-
 }
 
 .container-field img {
@@ -905,6 +862,7 @@ td {
     margin-right: 7%;
     margin-top: 13%;
 }
+
 .container-field2 {
     display: flex;
     justify-content: space-between;
@@ -969,25 +927,17 @@ td {
 .container-field3 img {
     flex-wrap: wrap;
     max-width: 35%;
-    /* Limit the image width */
-    /* height: auto; */
     border-radius: 2%;
-    /* margin-top: 55%; */
-    /* margin-right: 5%; */
     float: right;
     margin-right: 7%;
     margin-top: 13%;
-    /* flex: 1; */
-    /* margin-bottom: 100%; */
-
 }
 
 .goback {
 
     padding: 8px 15px;
     font-size: 15px;
-    /* background-color: rgb(246, 197, 205); */
-    background-color: rgb(235, 146, 212);
+    background-color: rgb(245, 136, 154);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
@@ -996,6 +946,7 @@ td {
     letter-spacing: 1.5px;
     margin-top: 3%;
     margin-left: 30%;
+    border: none;
 }
 
 .goback a {
@@ -1006,8 +957,7 @@ td {
 }
 
 .goback:hover {
-    border: 2px solid silver;
-    background: antiquewhite;
+    background: lightblue;
     transition: 1s;
 }
 
@@ -1021,8 +971,10 @@ td {
     text-align: center;
     margin-top: 8%;
     font-size: 250%;
-    color:  rgb(232, 74, 190);
-    text-shadow: 3px 4px pink;
+    color: rgb(245, 136, 154);
+    font-size: 75px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px pink;
     font-size: 350%;
 
 }
@@ -1104,19 +1056,168 @@ td {
     margin-right: 3%;
 }
 
-.swot-img{
+.swot-img {
     display: flex;
     /* max-width: 20%; */
-}
-.swot-img img{
-    max-width: 20%;
-    text-align: center;
-    margin-left: 3%;
-    width: auto;
+    background-color: rgb(250, 240, 226);
+
 }
 
-/* .inspiringquotes{
+.swot-img img {
+    max-width: 17%;
+    text-align: center;
+    margin-left: 12%;
+    width: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    border: 8px solid rgb(245, 136, 154);
+
+}
+
+button.swotbtn {
+    padding: 8px 15px;
+    font-size: 15px;
+    /* background-color: rgb(230, 191, 219); */
+    cursor: pointer;
+    background-color: rgb(245, 136, 154);
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin-left: 29%;
+    margin-top: 5%;
+    border: none;
+}
+
+.swotbtn a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+}
+
+.swotbtn:hover {
+    /* border: 2px solid silver; */
+    background: lightblue;
+    transition: 1s;
+}
+
+button.swotbtn-strengh {
+    padding: 8px 15px;
+    font-size: 15px;
+   background-color: rgb(245, 136, 154);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin-left: 27%;
+    margin-top: 6%;
+    border: none;
+}
+
+.swotbtn-strengh a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+}
+
+.swotbtn-strengh:hover {
+    background: lightblue;
+    transition: 1s;
+}
+
+button.swotbtn-weekness {
+    padding: 8px 15px;
+    font-size: 15px;
+    background-color: rgb(245, 136, 154);
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    margin-left: 27%;
+    margin-top: 5%;
+    border: none;
+}
+
+.swotbtn-weekness a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+}
+
+.swotbtn-weekness:hover {
+    /* border: 2px solid silver; */
+    background: lightblue;
+    transition: 1s;
+}
+
+/* -------------------------------INTERESTING FACTS ----------------------------- */
+.facts-img {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.img-container {
+    text-align: center;
+    margin-top: 70px;
+    gap: 10px;
+}
+
+.img-container p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.facts-img .img-container img {
+    width: 55%;
+    max-width: none;
+    height: auto;
+    border-radius: 2%;
+    border: 8px solid rgb(245, 136, 154);
+}
+
+.facts-text {
+    text-align: center;
+    margin-top: 8%;
+    font-size: 250%;
+    color: rgb(245, 136, 154);
+    font-size: 85px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px pink;
+    font-size: 85px;
+
+}
+
+.facts-button {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1.5px;
     display: inline-block;
-    width: 25%;
-    height: auto; */
+    /* background-color: rgb(230, 191, 219); */
+    background-color: rgb(245, 136, 154);
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+}
+
+.facts-button a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+
+}
+
+.facts-button:hover {
+    background:lightblue;
+    transition: 1s;
+}
