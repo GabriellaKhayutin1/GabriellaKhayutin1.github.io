@@ -44,11 +44,8 @@
                     I have graduated high school with an excellent score.
 
                 </p>
-
-
-                <button class="swotbtn-aboutme"> Read More</button>
-
-                <p class="hidden-text">
+                <button class="swotbtn-aboutme" id="toggle-button">Read More</button>
+                <p class="hidden-text" id="hidden-text">
                     I was born and raised in Israel. I was living their till the age of 15. Than me and my family moved
                     to
                     Bulgaria, where I graduated highschool. Now I moved to The Netherlands to study ICT at the HZ
@@ -65,7 +62,6 @@
                     I will be able to
                     succeed in LIFE.
 
-
                 </p>
             </div>
 
@@ -74,20 +70,44 @@
 
 
     </section>
+    <script>
+        // Get references to the button and the hidden text
+        const toggleButton = document.getElementById("toggle-button");
+        const hiddenText = document.getElementById("hidden-text");
+    
+        // Function to toggle the hidden text
+        function toggleHiddenText() {
+            if (hiddenText.style.display === "block" || hiddenText.style.display === "") {
+                hiddenText.style.display = "none";
+                toggleButton.innerText = "Read More";
+            } else {
+                hiddenText.style.display = "block";
+                toggleButton.innerText = "Close Text";
+            }
+        }
+    
+        // Add a click event listener to the button
+        toggleButton.addEventListener("click", toggleHiddenText);
+    </script>
 
 </body>
 <!-- ---------------footer -->
 <footer >
     <div class="footer-content">
-    <a href="" target="_blank">
-    <img class="footerprofile" src="Photos/facebook.png" alt="Facebooklogo">
-</a>
-    <p>&copy&nbsp; GabriellaKhayutin@gmail.com</p>
-    <a href="" target="_blank">
-        <img src="Photos/instagram.svg" alt="Instagramlogo">
-    </a>
-</div>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <img src="Photos/linkedin1.png" alt="linkedin">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img class="footerprofile" src="Photos/facebook.png" alt="Facebooklogo">
+        </a>
+        <p>&copy&nbsp; GabriellaKhayutin@gmail.com</p>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="Photos/instagram.svg" alt="Instagramlogo">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRrlJDCNHwsFFllzGgJgtcJDPmHncGXPWnqFrhSXhhFKbbFJLFGhGXXDpkVCHxPMLBzsNTG"
+            target="_blank">
+            <img src="Photos/gmail.png" alt="Gmail.logo">
+        </a>
+    </div>
 </footer>
-
-
 </html>
