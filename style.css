@@ -18,45 +18,44 @@
 
 .active {
     font-weight: bold;
-    background-color: #e8d1ec;
+    /* background-color: #e8d1ec; */
     color: rgb(8, 8, 8);
-    /* padding-top: 25px; */
 
 
 }
 
 li.active {
-    background-color: #e8d1ec;
+    /* background-color: #e8d1ec; */
+    background-color: rgb(247, 173, 186);
     color: rgb(8, 8, 8);
-    border-radius: 25px;
+    border-radius: 20px;
+    padding: 2px;
 }
-
 
 .hero-btn {
     text-decoration: none;
     color: black;
     padding: 12px 34px;
-    font-size: 20px;
-    background: rgb(225, 184, 191);
+    font-size: 23px;
+    background: rgb(184, 212, 225);
     position: usticky;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 30px ;
     font-weight: bold;
     border: none;
-
-
 }
 
 .cv {
     text-align: center;
     padding-top: 650px;
     padding-left: 1075px;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .hero-btn:hover {
-    background: lightblue;
-    transition: 1s;
+    background: rgb(164, 211, 227);
+    transition: 1.5s;
+    font-size: 25px;
 }
 
 li {
@@ -374,7 +373,7 @@ nav ul li {
 button.swotbtn-aboutme {
     padding: 8px 15px;
     font-size: 15px;
-    background-color:rgb(245, 136, 154);
+    background-color: rgb(245, 136, 154);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
@@ -419,6 +418,16 @@ footer {
     padding: 1%;
     background-image: linear-gradient(var(--primary), var(--secondary))
 }
+.footer-content {
+    display: flex;
+    justify-content: center; /* Horizontally center align the content */
+    align-items: center; /* Vertically center align the content */
+}
+
+/* Style for the individual items within the footer */
+.footer-content a, .footer-content p {
+    margin: 0 10px; /* Add spacing between elements */
+}
 
 .footer-dash {
     margin-top: 3%;
@@ -426,6 +435,10 @@ footer {
 
 .blog-footer {
     margin-bottom: 0px;
+}
+.footer-content img {
+    width: 30px; /* Set the desired width (adjust as needed) */
+    height: 30px; /* Set the desired height (adjust as needed) */
 }
 
 
@@ -739,7 +752,7 @@ td {
 }
 
 .firstwebsite:hover {
-    background:lightblue;
+    background: lightblue;
     transition: 1s;
 }
 
@@ -792,7 +805,7 @@ td {
 .firstwebsite {
     padding: 8px 15px;
     font-size: 15px;
-    background-color:rgb(245, 136, 154);
+    background-color: rgb(245, 136, 154);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
@@ -1106,7 +1119,7 @@ button.swotbtn {
 button.swotbtn-strengh {
     padding: 8px 15px;
     font-size: 15px;
-   background-color: rgb(245, 136, 154);
+    background-color: rgb(245, 136, 154);
     cursor: pointer;
     border-radius: 10px;
     font-weight: bold;
@@ -1163,6 +1176,34 @@ button.swotbtn-weekness {
     justify-content: center;
     margin-bottom: 10%;
 }
+.rotating {
+
+    animation-name: spin;
+
+    animation-duration: 2000ms;
+
+    animation-iteration-count: infinite;
+
+    animation-timing-function: linear;
+
+  }
+  @keyframes spin {
+
+    from {
+
+      transform: rotate(0deg);
+
+    }
+
+ 
+
+    to {
+
+      transform: rotate(360deg);
+
+    }
+
+  }
 
 .img-container {
     text-align: center;
@@ -1218,6 +1259,6 @@ button.swotbtn-weekness {
 }
 
 .facts-button:hover {
-    background:lightblue;
+    background: lightblue;
     transition: 1s;
 }
